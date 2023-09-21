@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Documentação</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Documentação</h2>
+    <h3>display: flex</h3>
+    
+    
+    <!-- Abreviação Emmet: p.descricao-propriedade -->
+    <p class="descricao-propriedade">
+        A propriedade display: Flex deve ser a primeira a ser declarada no CSS. A partir
+        dela é que o CSS vai entender que precisa estilizar o conteúdo do contêiner 
+        com a caixa Flexiver(Flexbox).
+    </p>
+    <p>Exemplo:</p>
+<!-- Abreviação Emmet: p.container
+                       p.contido -->
+    <div class="container display-flex">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+<!-- Abreviação Emmet: table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor -->
+<table>
+    <caption>Valores padrão das propriedades do Flexbox</caption>
+    <tr>
+        <th class="propriedade">propriedade</th>
+        <th class="valor">valor</th>
+    </tr>
+    <tr>
+        <td class="propriedade">Flex-direction</td>
+        <td class="valor">row</td>
+    </tr>
+    <tr>
+        <td class="propriedade">justify-content</td>
+        <td class="valor">flex-start</td>
+    </tr>
+    <tr>
+        <td class="propriedade">align-content</td>
+        <td class="valor">flex-start</td>
+    </tr>
+</table>
+
+
+
+<h3>Flex-direction</h3>
+<P>
+    A propriedade especifica a direção dos itens de um elemento flex,
+    com os valores:
+</P>
+<h4>row ►  Os itens flexíveis são exibidos horizontalmente, como uma linha</h4>
+
+<p>Exemplo</p>
+
+<div class="container display-flex flex-direction-row">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h4>row-reverse ►  Os itens flexíveis são exibidos horizontalmente, como uma linha(row)</h4>
+
+<p>Exemplo</p>
+
+<div class="container display-flex  flex-direction-row-reverse">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h4>column ►  Os itens flexíveis são exibidos verticalmente, como uma coluna</h4>
+
+<p>Exemplo</p>
+
+<div class="container display-flex  flex-direction-column">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>justify-content</h3>
+<p class="descricao-propriedade">
+    A propriedade justify-content poder usada para
+    justificar o conteúdo do elemento conteiner em seu eixo
+    primário, ou seja, eixo x (row, row-reverse) ou eixo y
+    (column, conlum-reverse).
+</p>
+<h4>center</h4>
+<p class="descricao-propriedade">
+    O valor "center" vai alinhar o conteúdo ao 
+    centro do eixo primátio.
+</p>
+
+<p>Exemplo</p>
+
+<div class="container display-flex justify-content-center">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">2</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+
+</body>
+</html>
