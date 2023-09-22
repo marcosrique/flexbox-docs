@@ -20,6 +20,10 @@ body {
     margin: auto;
 }
 
+article {
+    background-color: #e9edc9;
+}
+
 h1, h1, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
@@ -58,12 +62,45 @@ h4 {
 
 }
 
+.contido-strech {
+    height: 0;
+    width: 0;
+}
+
 .display-flex {
     display: flex;
 }
 
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
 .justify-content-center {
     justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-initial {
+    justify-content: initial;
+}
+
+.justify-content-inherit {
+    justify-content: inherit;
 }
 
 .flex-direction-row {
@@ -78,6 +115,54 @@ h4 {
     flex-direction: column;
 }
 
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-direction-initial {
+    flex-direction: initial;
+}
+
+.flex-direction-inherit {
+    flex-direction: inherit;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-center {
+    align-content: center;
+} 
+
+.align-content-flex-start {
+    align-content: flex-start;
+}
+
+.align-content-flex-end {
+    align-content: flex-end;
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+.align-content-space-around	 {
+    align-content: space-around;
+}
+
+.align-content-space-evenly	 {
+    align-content: space-evenly;
+}
+
+.align-content-initial {
+    align-content: initial;
+}
+
+.align-content-inherit {
+    align-content: inherit;
+}
+ 
 p, table {
     margin: 20px 0;
 }
