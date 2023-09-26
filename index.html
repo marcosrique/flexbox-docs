@@ -31,23 +31,23 @@
         <div class="contido">5</div>
     </div>
     <!-- Abreviação Emmet: table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor -->
-    <table>
+    <table style="width: 20%;">
         <caption>Valores padrão das propriedades do Flexbox</caption>
         <tr>
-            <th class="propriedade">propriedade</th>
-            <th class="valor">valor</th>
+            <th class="propriedade th-style">Propriedade</th>
+            <th class="valor th-style">Valor</th>
         </tr>
-        <tr>
-            <td class="propriedade">Flex-direction</td>
-            <td class="valor">row</td>
+        <tr class="tr-borda">
+            <td class="propriedade td-borda">flex-direction</td>
+            <td class="valor td-borda">row</td>
         </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">flex-start</td>
+        <tr class="tr-borda">
+            <td class="propriedade td-borda">justify-content</td>
+            <td class="valor td-borda">flex-start</td>
         </tr>
-        <tr>
-            <td class="propriedade">align-content</td>
-            <td class="valor">flex-start</td>
+        <tr class=>
+            <td class="propriedade td-borda">align-content</td>
+            <td class="valor td-borda">flex-start</td>
         </tr>
     </table>
 
@@ -264,7 +264,7 @@
                 <div class="contido">5</div>
             </div>
             
-            <h3>align-content</h3>
+            <h3>align-items</h3>
             <p class="descricao-propriedade">
                 A align-contentpropriedade especifica como as linhas flexíveis são distribuídas ao 
                 longo do eixo cruzado em um contêiner flexbox.
@@ -280,12 +280,12 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-stretch">
-                <div class="contido contido-strech">1</div>
-                <div class="contido contido-strech">2</div>
-                <div class="contido contido-strech">2</div>
-                <div class="contido contido-strech">4</div>
-                <div class="contido contido-strech">5</div>
+            <div class="container display-flex">
+                <div class="contido contido-stretch">1</div>
+                <div class="contido contido-stretch">2</div>
+                <div class="contido contido-stretch">2</div>
+                <div class="contido contido-stretch">4</div>
+                <div class="contido contido-stretch">5</div>
             </div>
 
             <h4>center</h4>
@@ -295,7 +295,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-center">
+            <div class="container display-flex align-items-center">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -310,7 +310,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-flex-start">
+            <div class="container display-flex align-items-flex-start">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -325,7 +325,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-flex-end">
+            <div class="container display-flex align-items-flex-end">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -340,7 +340,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-space-between">
+            <div class="container display-flex align-items-space-between">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -356,7 +356,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-space-around">
+            <div class="container display-flex align-items-space-around">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -372,7 +372,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-stretch">
+            <div class="container display-flex align-items-evenly">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -387,7 +387,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-initial">
+            <div class="container display-flex align-items-initial">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
@@ -402,7 +402,7 @@
     
             <p>Exemplo</p>
     
-            <div class="container display-flex align-content-inherit">
+            <div class="container display-flex align-items-inherit">
                 <div class="contido">1</div>
                 <div class="contido">2</div>
                 <div class="contido">2</div>
