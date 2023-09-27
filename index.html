@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox - Documentação</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+    <nav class="navbar"> 
+        <a href="#home">home</a> 
+            <div class="subnav">
+                <button class="subnavbtn"><i class="fa fa-caret-down">Flex-direction</i></button>
+                <div class="subnav-content">
+                    <a href="#row">row</a>
+                    <a href="#row-reverse">row-reverse</a>
+                    <a href="#column">column</a>
+                    <a href="#column-reverse">colum-reverse</a>
+                    <a href="#initial">initial</a>
+                    <a href="#inherit">inherit</a>
+                </div>
+            </div>
+  
+    
+        
+        
+    
+    </nav>
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
     <h3>display: flex</h3>
@@ -49,22 +71,22 @@
             <td class="propriedade td-borda">align-content</td>
             <td class="valor td-borda">flex-start</td>
         </tr>
-    </table>
+    </table> 
 
 
 
-    <h3>Flex-direction</h3>
+    <h3> Flex-direction</h3>
     <P>
         A propriedade especifica a direção dos itens de um elemento flex,
         com os valores:
     </P>
-    <h4>row ► Os itens flexíveis são exibidos horizontalmente, como uma linha</h4>
+    <h4> <span id="row">row</span>  ► Os itens flexíveis são exibidos horizontalmente, como uma linha</h4>
 
     <p>Exemplo</p>
 
     <div class="container display-flex flex-direction-row">
         <div class="contido">1</div>
-        <div class="contido">2</div>
+        <div class="contido">2</div> 
         <div class="contido">3</div>
         <div class="contido">4</div>
         <div class="contido">5</div>
