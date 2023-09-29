@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar"> 
-        <a href="#home">home</a> 
+        <a href="#home">home</a> <h1 id="home"></h1>
             <div class="subnav">
                 <button class="subnavbtn"><i class="fa fa-caret-down">Flex-direction</i></button>
                 <div class="subnav-content">
@@ -21,6 +21,33 @@
                     <a href="#row-reverse">row-reverse</a>
                     <a href="#column">column</a>
                     <a href="#column-reverse">colum-reverse</a>
+                    <a href="#initial">initial</a>
+                    <a href="#inherit">inherit</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><i class="fa fa-caret-down">Justify-content</i></button>
+                <div class="subnav-content">
+                    <a href="#flex-start">Flex-start</a>
+                    <a href="#flex-end">Flex-end</a>
+                    <a href="#center">center</a>
+                    <a href="#space-between">Space-between</a>
+                    <a href="#space-around">Space-around</a>
+                    <a href="#space-evenly">Space-evenly</a>
+                    <a href="#initial">Initial</a>
+                    <a href="#inherit">Inherit</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><i class="fa fa-caret-down">Align-items</i></button>
+                <div class="subnav-content">
+                    <a href="#stretch">Stretch</a>
+                    <a href="#center">center</a>
+                    <a href="#flex-start">Flex-start</a>
+                    <a href="#flex-end">Flex-end</a>
+                    <a href="#space-between">Space-between</a>
+                    <a href="#space-around">Space-around</a>
+                    <a href="#space-evenly">Space-evenly</a>
                     <a href="#initial">initial</a>
                     <a href="#inherit">inherit</a>
                 </div>
@@ -80,7 +107,8 @@
         A propriedade especifica a direção dos itens de um elemento flex,
         com os valores:
     </P>
-    <h4> <span id="row">row</span>  ► Os itens flexíveis são exibidos horizontalmente, como uma linha</h4>
+    <h4 id="row"> row ► Os itens flexíveis são exibidos horizontalmente, como uma linha</h4> <a href="#home">Voltar</a>
+    
 
     <p>Exemplo</p>
 
@@ -92,7 +120,7 @@
         <div class="contido">5</div>
     </div>
 
-    <h4>row-reverse ► Igual à linha(row), mas na ordem inversa</h4>
+    <h4 id="row-reverse">row-reverse ► Igual à linha(row), mas na ordem inversa</h4> <a href="#home">Voltar</a>
 
     <p>Exemplo</p>
 
@@ -104,7 +132,7 @@
         <div class="contido">5</div>
     </div>
 
-    <h4>column ► Os itens flexíveis são exibidos verticalmente, como uma coluna</h4>
+    <h4 id="column">column ► Os itens flexíveis são exibidos verticalmente, como uma coluna</h4> <a href="#home">Voltar</a>
 
     <p>Exemplo</p>
 
@@ -116,7 +144,7 @@
         <div class="contido">5</div>
     </div>
 
-    <h4>column-reverse ► Igual ao column, só que na ordem inversa. </h4>
+    <h4 id="colum-reverse">column-reverse ► Igual ao column, só que na ordem inversa. </h4> <a href="#home">Voltar</a>
     <div class="container display-flex  flex-direction-column-reverse">
         <div class="contido">1</div>
         <div class="contido">2</div>
@@ -125,7 +153,7 @@
         <div class="contido">5</div>
     </div>
 
-    <h4>initial ► Define esta propriedade com seu valor padrão.</h4>
+    <h4 id="initial">initial ► Define esta propriedade com seu valor padrão.</h4> <a href="#home">Voltar</a>
         <div class="container display-flex  flex-direction-initial">
             <div class="contido">1</div>
             <div class="contido">2</div>
@@ -134,29 +162,29 @@
             <div class="contido">5</div>
         </div>
 
-        <h4>inherit ► Herda esta propriedade de seu elemento pai.</h4>
-            <div class="container display-flex  flex-direction-inherit">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">3</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <h4 id="inherit">inherit ► Herda esta propriedade de seu elemento pai.</h4> <a href="#home">Voltar</a>
+        <div class="container display-flex  flex-direction-inherit">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
 
-            <h3>justify-content</h3>
-            <p class="descricao-propriedade">
-                A propriedade justify-content poder usada para
-                justificar o conteúdo do elemento conteiner em seu eixo
-                primário, ou seja, eixo x (row, row-reverse) ou eixo y
-                (column, conlum-reverse).
-            </p>
+    <h3>justify-content</h3>
+        <p class="descricao-propriedade">
+            A propriedade justify-content poder usada para
+            justificar o conteúdo do elemento conteiner em seu eixo
+            primário, ou seja, eixo x (row, row-reverse) ou eixo y
+            (column, conlum-reverse).
+        </p>
             
-            <h4>flex-start</h4>
-            <p class="descricao-propriedade">
-                O valor "start" Os itens são posicionados no início do contêiner.
-            </p>
+    <h4 id="flex-start">flex-start</h4> <a href="#home">Voltar</a>
+        <p class="descricao-propriedade">
+            O valor "start" Os itens são posicionados no início do contêiner.
+        </p>
 
-            <p>Exemplo</p>
+        <p>Exemplo</p>
 
             <div class="container display-flex justify-content-flex-start">
                 <div class="contido">1</div>
@@ -166,129 +194,115 @@
                 <div class="contido">5</div>
             </div>
             
-            <h4>flex-end</h4>
-            <p class="descricao-propriedade">
-                O valor "flex-end" Os itens são posicionados no final do contêiner.
-            </p>
+    <h4>flex-end</h4>
+        <p class="descricao-propriedade">
+            O valor "flex-end" Os itens são posicionados no final do contêiner.
+        </p>
             
-            <p>Exemplo</p>
+        <p>Exemplo</p>
             
-            <div class="container display-flex justify-content-flex-end">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
-            <h4>center</h4>
-            <p class="descricao-propriedade">
-                O valor "center" vai alinhar o conteúdo ao
-                centro do eixo primátio.
-            </p>
+        <div class="container display-flex justify-content-flex-end">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
+        
+        <h4>center</h4>
+        <p class="descricao-propriedade">
+            O valor "center" vai alinhar o conteúdo ao
+            centro do eixo primátio.
+        </p>
             
-            <p>Exemplo</p>
+        <p>Exemplo</p>
             
-            <div class="container display-flex justify-content-center">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+        <div class="container display-flex justify-content-center">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
             
-            <h4>space-between</h4>
-            <p class="descricao-propriedade">
-                O valor "space-between" Os itens são posicionados no final do contêiner.
-            </p>
+        <h4>space-between</h4>
+        <p class="descricao-propriedade">
+            O valor "space-between" Os itens são posicionados no final do contêiner.
+        </p>
             
-            <p>Exemplo</p>
+        <p>Exemplo</p>
             
-            <div class="container display-flex justify-content-space-between">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+        <div class="container display-flex justify-content-space-between">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
             
-            <h4>space-around</h4>
-            <p class="descricao-propriedade">
-                O valor "space-around" Os itens terão espaço antes, entre e depois deles.
-            </p>
+        <h4>space-around</h4>
+        <p class="descricao-propriedade">
+            O valor "space-around" Os itens terão espaço antes, entre e depois deles.
+        </p>
             
-            <p>Exemplo</p>
+        <p>Exemplo</p>
             
-            <div class="container display-flex justify-content-space-around">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+        <div class="container display-flex justify-content-space-around">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
             
-            <h4>space-evenly</h4>
-            <p class="descricao-propriedade">
-                O valor "space-evenly" Os itens terão espaço igual ao seu redor.
-            </p>
+        <h4>space-evenly</h4>
+        <p class="descricao-propriedade">
+            O valor "space-evenly" Os itens terão espaço igual ao seu redor.
+        </p>
             
-            <p>Exemplo</p>
+        <p>Exemplo</p>
             
-            <div class="container display-flex justify-content-space-evenly">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+        <div class="container display-flex justify-content-space-evenly">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
+                                    
+        <h4>initial</h4>
+        <p class="descricao-propriedade">
+            O valor "initial" Define esta propriedade com seu valor padrão.
+        </p>
             
-            <h4>space-around</h4>
-            <p class="descricao-propriedade">
-                O valor "space-around" Os itens terão espaço antes, entre e depois deles.
-            </p>
+        <p>Exemplo</p>
             
-            <p>Exemplo</p>
+        <div class="container display-flex justify-content-initial">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
             
-            <div class="container display-flex justify-content-space-around">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+        <h4>inherit</h4>
+        <p class="descricao-propriedade">
+            O valor "inherit" Herda esta propriedade de seu elemento pai.
+        </p>
             
-            <h4>initial</h4>
-            <p class="descricao-propriedade">
-                O valor "initial" Define esta propriedade com seu valor padrão.
-            </p>
+        <p>Exemplo</p>
             
-            <p>Exemplo</p>
+        <div class="container display-flex justify-content-space-inherit">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">2</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
             
-            <div class="container display-flex justify-content-initial">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
-            
-            <h4>inherit</h4>
-            <p class="descricao-propriedade">
-                O valor "inherit" Herda esta propriedade de seu elemento pai.
-            </p>
-            
-            <p>Exemplo</p>
-            
-            <div class="container display-flex justify-content-space-inherit">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
-            
-            <h3>align-items</h3>
-            <p class="descricao-propriedade">
-                A align-contentpropriedade especifica como as linhas flexíveis são distribuídas ao 
+        <h3>align-items</h3>
+        <p class="descricao-propriedade">
+            A align-contentpropriedade especifica como as linhas flexíveis são distribuídas ao 
                 longo do eixo cruzado em um contêiner flexbox.
                 Nota: A align-contentpropriedade também pode ser usada em um contêiner de grade 
                 para alinhar itens de grade na direção do bloco. Para páginas em inglês, a direção 
