@@ -49,7 +49,7 @@ h4 {
 
 .navbar {
     overflow: hidden;
-    background-color: gray;
+    background-color: #5C469C;
   
 }
 
@@ -79,14 +79,14 @@ h4 {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
+    background-color: #3F0071;
 }
 
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: red;
+    background-color: #3F0071;
     width: 100%;
     z-index: 1;
 }
@@ -98,8 +98,8 @@ h4 {
 }
 
 .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+    background-color: #5C469C;
+    color: #3F0071;
 
 }
 
@@ -109,19 +109,110 @@ h4 {
 
 .container {
     height: 300px;
-    background-color: antiquewhite;
-    border: 5px solid #ff0000;
+    background-color: #D4ADFC;
+    border: 5px solid #5C469C;
     border-radius: 20px;
-    
+}
 
+.container-column {
+    height: 900px;
+    background-color: #D4ADFC;
+    border: 5px solid #5C469C;
+    border-radius: 20px;
+}
+
+.container-column :nth-child(1) {
+    background-color:#6F38C5;
+}
+.container-column :nth-child(2) {
+    background-color: #256D85;
+}
+
+.container-column :nth-child(3) {
+    background-color: #03C988;
+}
+
+.container-column :nth-child(4) {
+    background-color: #8FE3CF;
+}
+
+.container-column :nth-child(5) {
+    background-color: #5F6F94;
+}
+
+.container :nth-child(1) {
+    background-color: #6F38C5;
+}
+.container :nth-child(2) {
+    background-color: #256D85;
+}
+
+.container-column :nth-child(3) {
+    background-color: #03C988;
+}
+
+.container :nth-child(4) {
+    background-color: #8FE3CF;
+}
+
+.container :nth-child(5) {
+    background-color: #5F6F94;
 }
 
 .contido {
     width: 150px;
     height: 150px;
-    background-color: aqua;
-    border: 5px solid #00f;
+    background-color: #1D267D;
+    border: 5px solid #0C134F;
     border-radius: 20px;
+    text-align: center;
+    color: white;
+    
+}
+
+img {
+    opacity: 0;
+    margin: auto;
+    display: inline;
+    padding: 20px;
+
+}
+
+.contido img:hover {
+    opacity: 100;
+    margin: 0;
+   
+}
+
+.contido-hover:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.contido-hover-column:hover {
+    width: 175px;
+    height: 175px;
+}
+
+
+
+.contido :nth-child(1) {
+    background-color: #6F38C5;
+}
+.contido :nth-child(2) {
+    background-color: #256D85;
+}
+
+.contido :nth-child(3) {
+    background-color: #03C988;
+}
+
+.contido :nth-child(4) {
+    background-color: #8FE3CF;
+}
+
+.contido :nth-child(5) {
+    background-color: #5F6F94;
 }
 
 .display-flex {
@@ -203,16 +294,16 @@ h4 {
     align-items: flex-end;
 }
 
-.align-items-space-between {
-    align-items: space-between;
+.align-items-start {
+    align-items: start;
 }
 
-.align-items-space-around	 {
-    align-items: space-around;
+.align-items-end {
+    align-items: end;
 }
 
-.align-items-space-evenly	 {
-    align-items: space-evenly;
+.align-items-baseline	 {
+    align-items: baseline;
 }
 
 .align-items-initial {
@@ -221,6 +312,26 @@ h4 {
 
 .align-items-inherit {
     align-items: inherit;
+}
+
+#baseline-1 {
+    height: 130px;
+}
+
+#baseline-2 {
+    height: 110px;
+}
+
+#baseline-3 {
+    height: 90px;
+}
+
+#baseline-4 {
+    height: 70px;
+}
+
+.align-items-space-evenly	 {
+    align-items: space-evenly;
 }
 
 
@@ -244,21 +355,15 @@ td, th {
     text-align: center;
     font-size: 20pt;
     text-decoration: solid;
-    border: 2px solid red;
-    background-color: bisque;
+    border: 2px solid #27005D;
+    background-color: #793FDF;
 }
 
 .td-borda {
-    border: 2px solid red;
-    background-color: rgb(241, 237, 218);
+    border: 2px solid #27005D;
+    background-color: #793FDF;
     padding-left: 10px;
 }
-
-/*
-tr:nth-child(odd) {
-    background-color: #cecece;
-} 
-obs: usado para colorir as linhas ímpares.*/
 
 
 

@@ -7,56 +7,55 @@
     <title>Flexbox - Documentação</title>
     <link rel="stylesheet" href="./style.css">
     <!-- Load font awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <nav class="navbar"> 
-        <a href="#home">home</a> <h1 id="home"></h1>
-            <div class="subnav">
-                <button class="subnavbtn"><i class="fa fa-caret-down">Flex-direction</i></button>
-                <div class="subnav-content">
-                    <a href="#row">row</a>
-                    <a href="#row-reverse">row-reverse</a>
-                    <a href="#column">column</a>
-                    <a href="#column-reverse">colum-reverse</a>
-                    <a href="#initial">initial</a>
-                    <a href="#inherit">inherit</a>
-                </div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <h1 id="home"></h1>
+        <div class="subnav">
+            <button class="subnavbtn"><i class="fa fa-caret-down">Flex-direction</i></button>
+            <div class="subnav-content">
+                <a href="#row">row</a>
+                <a href="#row-reverse">row-reverse</a>
+                <a href="#column">column</a>
+                <a href="#column-reverse">column-reverse</a>
+                <a href="#initial-fd">initial</a>
+                <a href="#inherit-fd">inherit</a>
             </div>
-            <div class="subnav">
-                <button class="subnavbtn"><i class="fa fa-caret-down">Justify-content</i></button>
-                <div class="subnav-content">
-                    <a href="#flex-start">Flex-start</a>
-                    <a href="#flex-end">Flex-end</a>
-                    <a href="#center">center</a>
-                    <a href="#space-between">Space-between</a>
-                    <a href="#space-around">Space-around</a>
-                    <a href="#space-evenly">Space-evenly</a>
-                    <a href="#initial">Initial</a>
-                    <a href="#inherit">Inherit</a>
-                </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><i class="fa fa-caret-down">Justify-content</i></button>
+            <div class="subnav-content">
+                <a href="#flex-start">Flex-start</a>
+                <a href="#flex-end">Flex-end</a>
+                <a href="#center-jc">center</a>
+                <a href="#space-between">Space-between</a>
+                <a href="#space-around">Space-around</a>
+                <a href="#space-evenly">Space-evenly</a>
+                <a href="#initial-jc">Initial</a>
+                <a href="#inherit-jc">Inherit</a>
             </div>
-            <div class="subnav">
-                <button class="subnavbtn"><i class="fa fa-caret-down">Align-items</i></button>
-                <div class="subnav-content">
-                    <a href="#stretch">Stretch</a>
-                    <a href="#center">center</a>
-                    <a href="#flex-start">Flex-start</a>
-                    <a href="#flex-end">Flex-end</a>
-                    <a href="#space-between">Space-between</a>
-                    <a href="#space-around">Space-around</a>
-                    <a href="#space-evenly">Space-evenly</a>
-                    <a href="#initial">initial</a>
-                    <a href="#inherit">inherit</a>
-                </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><i class="fa fa-caret-down">Align-items</i></button>
+            <div class="subnav-content">
+                <a href="#stretch">Stretch</a>
+                <a href="#center-ai">center</a>
+                <a href="#flex-start">Flex-start</a>
+                <a href="#flex-end">Flex-end</a>
+                <a href="#baseline">Space-between</a>
+                <a href="#initial-ai">initial</a>
+                <a href="#inherit-ai">inherit</a>
             </div>
-  
-    
-        
-        
-    
+        </div>
+
+
+
+
+
     </nav>
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
@@ -80,7 +79,7 @@
         <div class="contido">5</div>
     </div>
     <!-- Abreviação Emmet: table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor -->
-    <table style="width: 20%;">
+    <table style="width: 35%;">
         <caption>Valores padrão das propriedades do Flexbox</caption>
         <tr>
             <th class="propriedade th-style">Propriedade</th>
@@ -98,7 +97,7 @@
             <td class="propriedade td-borda">align-content</td>
             <td class="valor td-borda">flex-start</td>
         </tr>
-    </table> 
+    </table>
 
 
 
@@ -108,16 +107,16 @@
         com os valores:
     </P>
     <h4 id="row"> row ► Os itens flexíveis são exibidos horizontalmente, como uma linha</h4> <a href="#home">Voltar</a>
-    
+
 
     <p>Exemplo</p>
 
     <div class="container display-flex flex-direction-row">
-        <div class="contido">1</div>
-        <div class="contido">2</div> 
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
     </div>
 
     <h4 id="row-reverse">row-reverse ► Igual à linha(row), mas na ordem inversa</h4> <a href="#home">Voltar</a>
@@ -125,328 +124,303 @@
     <p>Exemplo</p>
 
     <div class="container display-flex  flex-direction-row-reverse">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
     </div>
 
-    <h4 id="column">column ► Os itens flexíveis são exibidos verticalmente, como uma coluna</h4> <a href="#home">Voltar</a>
+    <h4 id="column">column ► Os itens flexíveis são exibidos verticalmente, como uma coluna</h4> <a
+        href="#home">Voltar</a>
 
     <p>Exemplo</p>
 
-    <div class="container display-flex  flex-direction-column">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
+    <div class="container-column display-flex  flex-direction-column text-align-column">
+        <div class="contido contido-hover-column">1 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
     </div>
 
-    <h4 id="colum-reverse">column-reverse ► Igual ao column, só que na ordem inversa. </h4> <a href="#home">Voltar</a>
-    <div class="container display-flex  flex-direction-column-reverse">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
+    <h4 id="column-reverse">column-reverse ► Igual ao column, só que na ordem inversa. </h4> <a href="#home">Voltar</a>
+    <div class="container-column display-flex  flex-direction-column-reverse text-align-column">
+        <div class="contido contido-hover-column">1 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover-column">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
     </div>
 
-    <h4 id="initial">initial ► Define esta propriedade com seu valor padrão.</h4> <a href="#home">Voltar</a>
-        <div class="container display-flex  flex-direction-initial">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
+    <h4 id="initial-fd">initial ► Define esta propriedade com seu valor padrão.</h4> <a href="#home">Voltar</a>
+    <div class="container display-flex  flex-direction-initial">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
 
-    <h4 id="inherit">inherit ► Herda esta propriedade de seu elemento pai.</h4> <a href="#home">Voltar</a>
-        <div class="container display-flex  flex-direction-inherit">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
+    <h4 id="inherit-fd">inherit ► Herda esta propriedade de seu elemento pai.</h4> <a href="#home">Voltar</a>
+    <div class="container display-flex  flex-direction-inherit">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
 
     <h3>justify-content</h3>
-        <p class="descricao-propriedade">
-            A propriedade justify-content poder usada para
-            justificar o conteúdo do elemento conteiner em seu eixo
-            primário, ou seja, eixo x (row, row-reverse) ou eixo y
-            (column, conlum-reverse).
-        </p>
-            
+    <p class="descricao-propriedade">
+        A propriedade justify-content poder usada para
+        justificar o conteúdo do elemento conteiner em seu eixo
+        primário, ou seja, eixo x (row, row-reverse) ou eixo y
+        (column, conlum-reverse).
+    </p>
+
     <h4 id="flex-start">flex-start</h4> <a href="#home">Voltar</a>
-        <p class="descricao-propriedade">
-            O valor "start" Os itens são posicionados no início do contêiner.
-        </p>
+    <p class="descricao-propriedade">
+        O valor "start" Os itens são posicionados no início do contêiner.
+    </p>
 
-        <p>Exemplo</p>
+    <p>Exemplo</p>
 
-            <div class="container display-flex justify-content-flex-start">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
-            
-    <h4>flex-end</h4>
-        <p class="descricao-propriedade">
-            O valor "flex-end" Os itens são posicionados no final do contêiner.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-flex-end">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-        
-        <h4>center</h4>
-        <p class="descricao-propriedade">
-            O valor "center" vai alinhar o conteúdo ao
-            centro do eixo primátio.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-center">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-            
-        <h4>space-between</h4>
-        <p class="descricao-propriedade">
-            O valor "space-between" Os itens são posicionados no final do contêiner.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-space-between">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-            
-        <h4>space-around</h4>
-        <p class="descricao-propriedade">
-            O valor "space-around" Os itens terão espaço antes, entre e depois deles.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-space-around">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-            
-        <h4>space-evenly</h4>
-        <p class="descricao-propriedade">
-            O valor "space-evenly" Os itens terão espaço igual ao seu redor.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-space-evenly">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-                                    
-        <h4>initial</h4>
-        <p class="descricao-propriedade">
-            O valor "initial" Define esta propriedade com seu valor padrão.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-initial">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-            
-        <h4>inherit</h4>
-        <p class="descricao-propriedade">
-            O valor "inherit" Herda esta propriedade de seu elemento pai.
-        </p>
-            
-        <p>Exemplo</p>
-            
-        <div class="container display-flex justify-content-space-inherit">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">2</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-        </div>
-            
-        <h3>align-items</h3>
-        <p class="descricao-propriedade">
-            A align-contentpropriedade especifica como as linhas flexíveis são distribuídas ao 
-                longo do eixo cruzado em um contêiner flexbox.
-                Nota: A align-contentpropriedade também pode ser usada em um contêiner de grade 
-                para alinhar itens de grade na direção do bloco. Para páginas em inglês, a direção 
-                do bloco é para baixo e a direção embutida é da esquerda para a direita.
-            </p>
-            
-            <h4>stretch</h4>
-            <p class="descricao-propriedade">
-                O valor "stretch" valor padrão: As linhas se esticam para ocupar o espaço restante.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex">
-                <div class="contido contido-stretch">1</div>
-                <div class="contido contido-stretch">2</div>
-                <div class="contido contido-stretch">2</div>
-                <div class="contido contido-stretch">4</div>
-                <div class="contido contido-stretch">5</div>
-            </div>
+    <div class="container display-flex justify-content-flex-start">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
 
-            <h4>center</h4>
-            <p class="descricao-propriedade">
-                O valor "center" as linhas são empacotadas em direção ao centro do flex container.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-center">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <h4 id="flex-end">flex-end</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "flex-end" Os itens são posicionados no final do contêiner.
+    </p>
 
-            <h4>flex-start</h4>
-            <p class="descricao-propriedade">
-                O valor "flex-start" As linhas são empacotadas no início do flex container.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-flex-start">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <p>Exemplo</p>
 
-            <h4>flex-end</h4>
-            <p class="descricao-propriedade">
-                O valor "flex-end"  as linhas são embaladas no final do flex container.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-flex-end">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <div class="container display-flex justify-content-flex-end">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
 
-            <h4>space-between</h4>
-            <p class="descricao-propriedade">
-                O valor "space-between" as linhas são distribuídas uniformemente no flex container.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-space-between">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <h4 id="center-jc">center</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "center" vai alinhar o conteúdo ao
+        centro do eixo primátio.
+    </p>
 
-            <h4>space-around</h4>
-            <p class="descricao-propriedade">
-                O valor "space-around" As linhas são distribuídas uniformemente no flex container, 
-                com espaços de metade do tamanho em cada extremidade.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-space-around">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <p>Exemplo</p>
 
-            <h4>space-evenly</h4>
-            <p class="descricao-propriedade">
-                O valor "space-evenly" As linhas são distribuídas uniformemente no 
-                flex container, com espaço igual ao seu redor.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-evenly">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <div class="container display-flex justify-content-center">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
 
-            <h4>initial</h4>
-            <p class="descricao-propriedade">
-                O valor "initial" define esta propriedade com seu valor padrão.
-            </p>
-    
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-initial">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
+    <h4 id="space-between">space-between</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "space-between" Os itens são posicionados no final do contêiner.
+    </p>
 
-            <h4>inherit</h4>
-            <p class="descricao-propriedade">
-                O valor "inherit" herda esta propriedade de seu elemento pai.
-            </p>
+    <p>Exemplo</p>
+
+    <div class="container display-flex justify-content-space-between">
+        <div class="contido contido-hover">1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+
+    <h4 id="space-around">space-around</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "space-around" Os itens terão espaço antes, entre e depois deles.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex justify-content-space-around">
+        <div class="contido contido-hover">1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+
+    <h4 id="space-evenly">space-evenly</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "space-evenly" Os itens terão espaço igual ao seu redor.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex justify-content-space-evenly">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+
+    <h4 id="initial-jc">initial</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "initial" Define esta propriedade com seu valor padrão.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex justify-content-initial">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+
+    <h4 id="inherit-jc">inherit</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "inherit" Herda esta propriedade de seu elemento pai.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex justify-content-space-inherit">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+
+    <h3>align-items</h3>
+    <p class="descricao-propriedade">
+        A align-contentpropriedade especifica como as linhas flexíveis são distribuídas ao
+        longo do eixo cruzado em um contêiner flexbox.
+        Nota: A align-contentpropriedade também pode ser usada em um contêiner de grade
+        para alinhar itens de grade na direção do bloco. Para páginas em inglês, a direção
+        do bloco é para baixo e a direção embutida é da esquerda para a direita.
+    </p>
+
+    <h4 id="stretch">stretch</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "stretch" valor padrão: As linhas se esticam para ocupar o espaço restante.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex">
+        <div class="contido contido-stretch contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-stretch contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-stretch contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-stretch contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-stretch contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+
+    <h4 id="center-ai">center</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "center" as linhas são empacotadas em direção ao centro do flex container.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex align-items-center">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+    </div>
+
+    <h4 id="flex-start">flex-start</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "flex-start" As linhas são empacotadas no início do flex container.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex align-items-flex-start">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+    </div>
+
+    <h4 id="Flex-end">flex-end</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "flex-end" as linhas são embaladas no final do flex container.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex align-items-flex-end">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+    </div>
+
+    <h4 id="baseline">baseline</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        Os itens são posicionados na linha de base do contêiner.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex align-items-baseline">
+        <div class="contido contido-hover">1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover" id="baseline-1">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover" id="baseline-2" id="contido-hover-baseline2" >3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover" id="baseline-3" id="contido-hover-baseline3">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover" id="baseline-4" id="contido-hover-baseline4">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+    </div>
     
-            <p>Exemplo</p>
-    
-            <div class="container display-flex align-items-inherit">
-                <div class="contido">1</div>
-                <div class="contido">2</div>
-                <div class="contido">2</div>
-                <div class="contido">4</div>
-                <div class="contido">5</div>
-            </div>
-            
-            
-        </body>
-        
-        </html>
+    <h4 id="initial-ai">initial</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "initial" define esta propriedade com seu valor padrão.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex align-items-initial">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+    </div>
+
+    <h4 id="inherit-ai">inherit</h4> <a href="#home">Voltar</a>
+    <p class="descricao-propriedade">
+        O valor "inherit" herda esta propriedade de seu elemento pai.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display-flex align-items-inherit">
+        <div class="contido contido-hover" >1- passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">2 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">3 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">4 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+        <div class="contido contido-hover">5 - passe o mouse<img src="/flexbox-docs/imagens/ford_enter.jpg" alt=""></div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
